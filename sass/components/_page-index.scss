@@ -1,4 +1,4 @@
-.hero {
+/*.hero {
   background-color: #2f303a;
   height: 600px;
   max-width: 1600px;
@@ -85,7 +85,13 @@
 }
 .hang__text {
   letter-spacing: 0.03em;
+}*/
+.apps {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
+/*
 .apps__title {
   margin-bottom: 50px;
   font-weight: bold;
@@ -263,3 +269,4 @@
     background-color: #2196f3;
   }
 }
+*/
