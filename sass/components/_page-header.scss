@@ -4,7 +4,7 @@
 }
 
 .head__logo {
-  /*margin-right: 93px;*/
+  margin-right: 93px;
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   color: var(--color-dark);
@@ -13,50 +13,11 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-
   &-accent {
     color: var(--color-blue);
   }
 }
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
-.menu-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 32px;
-  background-color: #ffffff;
-  z-index: 999;
-
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-  &.is-open {
-    transform: translateX(0);
-  }
-  & .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
-  }
-}
-
-/*
 .there {
   color: var(--color-grey);
   display: flex;
@@ -95,43 +56,23 @@
     color: #757575;
   }
 }
-*/
-.head__smedia {
-  display: flex;
-}
+
 .page__header {
   display: flex;
   align-items: center;
 }
-.page__header-menu {
+.head {
   display: flex;
+  align-items: center;
 }
-.menu {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
-  &-mobile {
-    @media screen and (max-width: 768px) {
-      display: block;
-    }
-  }
-}
-
 .head__pages {
-  /*  display: flex;
+  display: flex;
   list-style: none;
-  text-decoration: none;*/
+  text-decoration: none;
   & .head__link {
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
-  }
-  @media screen and (max-width: 768px) {
-    margin-bottom: 302px;
   }
 }
 .head__link {
@@ -147,25 +88,7 @@
   &:focus {
     color: var(--color-blue);
   }
-  @media screen and (max-width: 768px) {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    letter-spacing: 0.02em;
-  }
-  &-mobile:not(:last-child) {
-    margin-right: 10px;
-  }
 }
-.head__link-mobile {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.02em;
-  color: #2196f3;
-}
-
 .item {
   align-items: center;
 }
@@ -174,7 +97,5 @@
   list-style: none;
   &:not(:last-child) {
     margin-right: 50px;
-  }
-  @media screen and (max-width: 768px) {
   }
 }
