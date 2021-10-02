@@ -1175,6 +1175,7 @@ ul {
   }
   .footer__subscribe {
     text-align: center;
+    margin-top: 60px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -2197,12 +2198,20 @@ ul {
     padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mob1.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mob1.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mob1.png");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mob1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+@media screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mob2.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mob2.png");
+}
+
+@media screen and (max-width: 767px) {
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -2425,12 +2434,20 @@ ul {
     padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tab1.png");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tab1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tab2.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tab2.png");
+}
+
+@media screen and (min-width: 768px) {
   .about {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -2584,18 +2601,19 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin: -15px;
   }
   .client__list > li {
-    width: 226px;
+    -ms-flex-preferred-size: calc((100% - 2 * 30px) / 2);
+        flex-basis: calc((100% - 2 * 30px) / 2);
     height: 92px;
+    margin: 15px;
   }
   .client__link {
     height: 100%;
     width: 100%;
     border-radius: 4px;
-    border: 1px solid #afb1b8;
+    outline: 1px solid #afb1b8;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2612,10 +2630,6 @@ ul {
   .client__link:hover .client__icon,
   .client__link:focus .client__icon {
     fill: #2196f3;
-  }
-  .client__list > li {
-    margin-right: 30px;
-    margin-bottom: 30px;
   }
   .client__icon {
     fill: #afb1b8;
@@ -2639,6 +2653,14 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/comp2.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/comp2.png");
+}
+
+@media screen and (min-width: 1200px) {
   .hero__title {
     margin-bottom: 30px;
     font-weight: 900;

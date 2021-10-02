@@ -253,6 +253,7 @@
 
 
 */
+
 @media screen and (max-width: 767px) {
   .hero__title {
     margin-bottom: 30px;
@@ -295,10 +296,14 @@
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/mob1.jpg');
+      url('../images/mob1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/mob2.png');
   }
   .about {
     padding-top: 60px;
@@ -507,10 +512,14 @@
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/.jpg');
+      url('../images/tab1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/tab2.png');
   }
   .about {
     padding-top: 60px;
@@ -648,18 +657,18 @@
   .client__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    margin: -15px;
   }
   .client__list > li {
-    width: 226px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
     height: 92px;
+    margin: 15px;
   }
   .client__link {
     height: 100%;
     width: 100%;
     border-radius: 4px;
-    border: 1px solid #afb1b8;
+    outline: 1px solid #afb1b8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -673,11 +682,6 @@
     &:focus .client__icon {
       fill: #2196f3;
     }
-  }
-
-  .client__list > li {
-    margin-right: 30px;
-    margin-bottom: 30px;
   }
 
   .client__icon {
@@ -699,6 +703,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/comp2.png');
   }
 
   .hero__title {
