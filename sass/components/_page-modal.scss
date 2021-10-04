@@ -38,26 +38,6 @@
   transform: translate(-50%, -50%) scale(1, 1);
 }
 
-.modal {
-  align-items: center;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  min-width: 528px;
-  min-height: 581px;
-  padding: 40px;
-
-  background-color: #fff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-
-  transform: translate(-50%, -50%) scale(1, 1);
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .modal-h {
   font-weight: bold;
   font-size: 20px;
@@ -210,4 +190,71 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    min-width: 450px;
+    min-height: 609px;
+    padding: 40px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1, 1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    min-width: 450px;
+    min-height: 609px;
+    padding: 40px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1, 1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1, 1);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

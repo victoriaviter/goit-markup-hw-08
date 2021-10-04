@@ -456,10 +456,15 @@
   }
   .subscribe {
     margin-top: 20px;
+    display: flex;
+    width: 450px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 151px;
 
     &__input {
       margin: 0;
-      width: 100%;
+      width: 450px;
       color: rgba(255, 255, 255, 0.6);
       padding: 11px 12px;
 
@@ -516,7 +521,7 @@
     margin-bottom: 8px;
   }
   .list__address {
-    text-align: start;
+    text-align: center;
   }
   .footer__conect {
     text-align: center;
@@ -530,6 +535,7 @@
   .footter__tablet {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -538,7 +544,9 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-
+  .list__address {
+    text-align: start;
+  }
   .footer__join {
     display: flex;
     align-items: center;
@@ -686,6 +694,7 @@
   .footer {
     display: flex;
     align-items: center;
+    align-items: baseline;
     &__conect {
       margin-left: 70px;
     }
@@ -707,10 +716,15 @@
 
   .subscribe {
     margin-top: 20px;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    width: 570px;
+    height: 86px;
 
     &__input {
       margin: 0;
       width: 358px;
+      height: 50px;
       color: rgba(255, 255, 255, 0.6);
       padding: 11px 12px;
 
@@ -731,6 +745,8 @@
       position: relative;
       border: none;
       width: 200px;
+
+      height: 50px;
       padding-top: 10px;
       padding-right: 28px;
       padding-bottom: 10px;
